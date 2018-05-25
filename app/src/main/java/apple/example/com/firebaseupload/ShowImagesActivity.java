@@ -16,16 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShowImagesActivity extends AppCompatActivity {
-    //recyclerview object
+
+
     private RecyclerView recyclerView;
-
-    //adapter object
     private RecyclerView.Adapter adapter;
-
-    //database reference
     private DatabaseReference mDatabase;
-
-    //progress dialog
     private ProgressDialog progressDialog;
 
     //list to hold all the uploaded images

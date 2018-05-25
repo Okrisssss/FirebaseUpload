@@ -123,9 +123,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void uploadFile() {
-        //checking if file is available
+
         if (filePath != null) {
-            //displaying progress dialog while image is uploading
+
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading");
             progressDialog.show();
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         }
                     });
         } else {
-            //display an error if no file is selected
+            Toast.makeText(this, "Please select a file.", Toast.LENGTH_SHORT).show();
         }
     }
 }
